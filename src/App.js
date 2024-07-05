@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// se usa esta libreria porque react no maneja rutas por si mismo y AXIOS para para las peticiones
+import {BrowserRouter,Routes,Route} from "react-router-dom";// se usa esta libreria porque react no 
+//componentes
+import Personaje from "./Componentes/Personaje";
+import TodoPersonajes from "./Componentes/Inicio";
+
+
+function App2(){//funcion exportablela funcion es exportable por eso el export
+    return <div>
+              <h1> Hola desde la APP2</h1>
+              <TodoPersonajes/>
+              <Personaje/>
+            </div>
+    
+  //return <h1> Hola desde la APP</h1>
+}//cambiar todo personajes por inicio 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Hola desde la APP</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<TodoPersonajes></TodoPersonajes>}></Route>
+          <Route path='/personaje/:id' element={<Personaje></Personaje>}></Route>
+
+        </Routes>
+      
+      
+      </BrowserRouter>
     </div>
   );
 }
-
-export default App;
+/*
+export function App(){
+  return <TodoList/>
+}*/
+export default App2;
+//:id es un objeto dinamico
+//path=ruta donde cargara los componentes
