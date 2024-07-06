@@ -1,41 +1,42 @@
 import React,{useEffect,useState} from "react";
 import { todosPersonajes } from "../js/Funciones";
+import { CortarUrl } from "../js/CortarUrl";
 
 
-const TodoPersonajes=()=>{
+export function Personajes(){
     const[personajes,setPersonajes]=useState(null)
     
     useEffect(()=>{
         todosPersonajes(setPersonajes)
-    },[])
 
-   
+    },[])
+    
+    
   
     if(personajes!=null){
         
-        return (<fragment>
+        
+        return (<div> 
+            
+            
+            <CortarUrl/>
             {personajes.map((personaje) =>(
                 
                 
-                <div key ={personaje.id}>
+                <div>
+                    <a href="#">{personaje.id}</a>
                     <a href="#">{personaje.name}</a>
+                    <CortarUrl urlIngresada={personaje.img} />
                     
                     
-                    <a href="#">{personaje.img}</a>
-                   
-                    
-                    <a href={personaje.img} target="_blank" rel="noopener noreferrer">
-                        <img src={personaje.img} alt="Imagen de Armin Arlelt" />
-                    </a>
-                
                 </div>
 
             ))}
-        </fragment>)
+            
+        </div> )
     }else{
         return (<div> NO hay personajes</div>)
     }
     
 };
 
-export default TodoPersonajes;
