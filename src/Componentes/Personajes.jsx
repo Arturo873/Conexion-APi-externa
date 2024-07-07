@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from "react";
-import { todosPersonajes } from "../js/Funciones";
-import { CortarUrl } from "../js/CortarUrl";
+import { todosPersonajes } from "./ConexionAPI";
+import { CortarUrl } from "./CortarUrl";
 
 
 export function Personajes(){
@@ -19,7 +19,7 @@ export function Personajes(){
         return (<div> 
             
             
-            <CortarUrl/>
+            
             {personajes.map((personaje) =>(
                 
                 

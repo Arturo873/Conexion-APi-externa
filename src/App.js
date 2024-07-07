@@ -1,20 +1,23 @@
 import React from "react";
 // se usa esta libreria porque react no maneja rutas por si mismo y AXIOS para para las peticiones
 import {BrowserRouter,Routes,Route} from "react-router-dom";// se usa esta libreria porque react no 
+
 //componentes
 import {Personajes} from "./Componentes/Personajes";
-import TodoPersonajes from "./Componentes/Inicio";
 
-function App2(){//funcion exportablela funcion es exportable por eso el export
+
+export function App2(){//funcion exportable la funcion es exportable por eso el export
     return <div>
               <h1> Hola desde la APP2</h1>
               
               <Personajes/>
             </div>
     
-  //return <h1> Hola desde la APP</h1>
-}//cambiar todo personajes por inicio <TodoPersonajes/>
+  
+}
+//export default App2;
 
+/*
 function App() {
   return (
     <div className="App">
@@ -30,7 +33,7 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+}*/
 /*
 export function App(){
   return <TodoList/>
