@@ -5,17 +5,24 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";// se usa esta libre
 //componentes
 import {Personajes} from "./Componentes/Personajes";
 
-
-export function App2(){//funcion exportable la funcion es exportable por eso el export
+export function App2(){
     return <div>
-              <h1> Hola desde la APP2</h1>
-              
+              <div className="row py-5">
+                <div className="col"> 
+                    <div className="border-bottom">
+                        <h1 className="text-center">Attack on titan Characters</h1>
+                    </div>
+
+                </div>
+
+            </div>
               <Personajes/>
+              
             </div>
     
   
 }
-//export default App2;
+export default App2;
 
 /*
 function App() {
@@ -38,6 +45,6 @@ function App() {
 export function App(){
   return <TodoList/>
 }*/
-export default App2;
+//export default App2;
 //:id es un objeto dinamico
 //path=ruta donde cargara los componentes
