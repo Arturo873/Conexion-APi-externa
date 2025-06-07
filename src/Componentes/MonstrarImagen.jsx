@@ -16,7 +16,7 @@ export function MonstrarImagen({urlIngresada}){
         let urlCortada = url.substring(0, posicion + formatoImagen.length);
         return ( <img src={urlCortada} class="card-img-center" width={250} height={250} alt=""></img>);
         
-    } else {//si no encunetra nada posicion sera -1
+    } else {
         return (<div> La imagen no esta en formato</div>)
     }
    
