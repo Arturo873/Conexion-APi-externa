@@ -1,3 +1,44 @@
+# 🌐 Conexión a API Externa (React)  
+[![Made with React](https://img.shields.io/badge/Made%20with-React-blue?logo=react&logoColor=white)](https://reactjs.org/)  
+[![Language](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript&logoColor=white)](#)  
+[![Status](https://img.shields.io/badge/Project%20Status-Completed-green)]()  
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)  
+
+---
+
+### 🇪🇸 Descripción  
+**Conexión a API Externa** es un proyecto en **React** que permite conectarse a servicios externos mediante **solicitudes HTTP**, obteniendo datos en tiempo real y mostrándolos en la interfaz de usuario. La app es ideal para integrar información de terceros en aplicaciones web interactivas.  
+
+**Objetivo:** Facilitar la integración de APIs externas para consultar, procesar y mostrar datos de manera eficiente y reactiva.  
+
+---
+
+### 
+- **Lenguaje:** JavaScript  
+- **Framework:** React  
+- **Bibliotecas:** Axios para solicitudes HTTP  
+- **Funcionalidad principal:** Conexión y manejo de datos de APIs externas  
+ 
+
+---
+
+### Funcionalidades principales  
+- Conectar con APIs externas mediante solicitudes GET o POST.  
+- Mostrar datos dinámicamente en la interfaz web.  
+- Manejo de errores y validación de respuestas de la API.  
+- Filtrar y buscar datos obtenidos de la API.  
+- Interfaz interactiva y responsive.  
+
+---
+
+
+
+
+
+
+
+
+
 #instalar libreria axios y react para poder funcionar(desde la CMD del computador)
 #npmt start //para iniciar desde la terminal de visualStudio
 
